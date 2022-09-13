@@ -1,0 +1,148 @@
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+li {
+  list-style: none;
+}
+*{
+  font-family: 'Epilogue', sans-serif;
+  transition: 0.25s ease;
+}
+.redirect-short li {
+  margin: 0px 20px;
+  color:hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+.redirect-short li:hover {
+  color: #000;
+}
+.right-0 {
+  right: 0;
+}
+.l-r-btns {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.l-r-btns button{
+  background: none;
+  outline: none;
+  border: none;
+  color: hsl(0, 0%, 41%);
+}
+.l-r-btns button:hover {
+  border-color: #000;
+  color: #000;
+}
+#Register {
+  padding: 8px 16px;
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 16px;
+}
+#Login {
+  padding: 8px 16px;
+
+}
+.mini-menu {
+  box-shadow: #0002 0 0 30px;
+  margin: 10px 0;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s ease;
+  position: absolute;
+  display: none;
+}
+.mini-menu li {
+  margin: 10px 15px;
+  font-size: 11px;
+  color: hsl(0, 0%, 41%);
+  display: flex;
+  align-items: center;
+}
+.mini-menu li img {
+  margin-right: 10px;
+}
+#menu-toggle {
+  right: 0;
+  max-width: fit-content;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 99;
+}
+h1 strong{
+  font-weight: 700;
+}
+.hero-img img{
+  max-width: 100%;
+  position: relative;
+}
+.ml-5 {
+  margin-left: 3rem;
+}
+.text-ground p {
+  color: hsl(0, 0%, 41%);
+}
+#learn-more{
+  background: hsl(0, 0%, 8%);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+#learn-more:hover {
+  border: hsl(0, 0%, 8%) 2px solid;
+  background: none;
+  color: hsl(0, 0%, 8%);
+}
+.sponsors img {
+  max-width: 100%;
+}
+.sponsors {
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .redirect-short {
+    display: block;
+    padding: 0;
+    margin-top: 120px;
+  }
+  .redirect-short li {
+    padding: 7px;
+  }
+  .l-r-btns {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .l-r-btns > button {
+    width: 100%
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top:0;
+    background-color: #fff;
+    display: block;
+    max-width: 60%;
+    width: 60%;
+    height: 100vh;
+    text-align: left;
+    z-index: 98;
+  }
+  .mini-menu {
+    position: relative;
+    transform: translateX(0);
+    box-shadow: none;
+    padding: 0;
+  }
+    .nav-menu li {
+    font-size: 18px;
+  }
+}

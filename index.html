@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row position-relative">
+      <div class="col-1 position-relative p-4">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <nav class="col-sm-11 nav-menu p-sm-4">
+        <ul class="d-sm-flex redirect-short m-sm-0">
+          <li id="features">
+            Features <img src="./images/icon-arrow-down.svg" alt="" id="F-arrow">
+            <ul id="mn-features" class="bg-white  mini-menu p-sm-3 rounded-3">
+              <li><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt=""> Calendar</li>
+              <li><img src="./images/icon-reminders.svg" alt=""> Remainders</li>
+              <li><img src="./images/icon-planning.svg" alt=""> Planing</li>
+            </ul>
+          </li>
+          <li id="company">
+            Company <img src="./images/icon-arrow-down.svg" alt="" id="c-arrow">
+            <ul id="mn-company" class="bg-white p-sm-3 rounded-3 mini-menu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers </li>
+          <li>About </li>
+        </ul>
+        <ul class="l-r-btns p-sm-4">
+          <button id="Login">Login</button>
+          <br/>
+          <button id="Register">Register</button>
+        </ul>
+      </nav>
+      <button class="position-absolute right-0 d-block d-sm-none mt-4" id="menu-toggle">
+        <img src="./images/icon-menu.svg" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="d-block d-sm-none hero-img p-0 m-0 col-12">
+        <img src="./images/image-hero-mobile.png" alt="">
+      </div>
+      <div class="text-ground col-sm-5 col-12 mt-5 text-center text-sm-start">
+        <h1>
+          <strong>
+            <span class="d-sm-block d-none">
+              Make <br/> remote work
+            </span> 
+            <span class="d-block d-sm-none">
+              Make remote work
+            </span>
+          </strong>
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button id="learn-more">
+          Learn more
+        </button>
+        <div class="col-12 mt-5 sponsors d-flex justify-content-center">
+          <div class="col-3"><img src="./images/client-databiz.svg" alt=""></div>
+          <div class="col-3"><img src="./images/client-audiophile.svg" alt=""></div>
+          <div class="col-3"><img src="./images/client-meet.svg" alt=""></div>
+          <div class="col-3"><img src="./images/client-maker.svg" alt=""></div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <div dir="rtl" class="col-5 d-none hero-img d-sm-block ml-5">
+        <img src="./images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/MB18Front">Mobin Bordbari</a>.
+  </div>
+  <script src="Js/script.js"></script>
+</body>
+</html>
